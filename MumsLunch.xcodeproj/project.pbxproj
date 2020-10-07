@@ -12,6 +12,12 @@
 		1B468DF7252DEB8000723FD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468DF6252DEB8000723FD8 /* ViewController.swift */; };
 		1B468DFC252DEB8200723FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B468DFB252DEB8200723FD8 /* Assets.xcassets */; };
 		1B468DFF252DEB8200723FD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B468DFD252DEB8200723FD8 /* LaunchScreen.storyboard */; };
+		1B468E0E252DF99700723FD8 /* RecommendedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468E0D252DF99700723FD8 /* RecommendedSection.swift */; };
+		1B468E12252DF9A500723FD8 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468E11252DF9A500723FD8 /* MainTabBarController.swift */; };
+		1B468E15252DF9C300723FD8 /* RecommenedCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468E14252DF9C300723FD8 /* RecommenedCustomCell.swift */; };
+		1B468E1B252DFC3400723FD8 /* RecommendedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468E1A252DFC3400723FD8 /* RecommendedCollectionViewController.swift */; };
+		1B468E1E252DFCFB00723FD8 /* TitleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468E1D252DFCFB00723FD8 /* TitleSection.swift */; };
+		1B468E21252DFD3500723FD8 /* CompositionalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468E20252DFD3500723FD8 /* CompositionalSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		1B468DFB252DEB8200723FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B468DFE252DEB8200723FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B468E00252DEB8200723FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B468E0D252DF99700723FD8 /* RecommendedSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedSection.swift; sourceTree = "<group>"; };
+		1B468E11252DF9A500723FD8 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1B468E14252DF9C300723FD8 /* RecommenedCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommenedCustomCell.swift; sourceTree = "<group>"; };
+		1B468E1A252DFC3400723FD8 /* RecommendedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewController.swift; sourceTree = "<group>"; };
+		1B468E1D252DFCFB00723FD8 /* TitleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSection.swift; sourceTree = "<group>"; };
+		1B468E20252DFD3500723FD8 /* CompositionalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,13 @@
 		1B468DF1252DEB8000723FD8 /* MumsLunch */ = {
 			isa = PBXGroup;
 			children = (
+				1B468E18252DF9E000723FD8 /* Enums */,
+				1B468E17252DF9D600723FD8 /* Extensions */,
+				1B468E0C252DF96500723FD8 /* CompositionalSections */,
+				1B468E0B252DF95D00723FD8 /* Networking */,
+				1B468E0A252DF95600723FD8 /* Controller */,
+				1B468E09252DF95100723FD8 /* View */,
+				1B468E08252DF94B00723FD8 /* Model */,
 				1B468DF2252DEB8000723FD8 /* AppDelegate.swift */,
 				1B468DF4252DEB8000723FD8 /* SceneDelegate.swift */,
 				1B468DF6252DEB8000723FD8 /* ViewController.swift */,
@@ -62,6 +81,61 @@
 				1B468E00252DEB8200723FD8 /* Info.plist */,
 			);
 			path = MumsLunch;
+			sourceTree = "<group>";
+		};
+		1B468E08252DF94B00723FD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B468E09252DF95100723FD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B468E14252DF9C300723FD8 /* RecommenedCustomCell.swift */,
+				1B468E20252DFD3500723FD8 /* CompositionalSection.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B468E0A252DF95600723FD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B468E11252DF9A500723FD8 /* MainTabBarController.swift */,
+				1B468E1A252DFC3400723FD8 /* RecommendedCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B468E0B252DF95D00723FD8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1B468E0C252DF96500723FD8 /* CompositionalSections */ = {
+			isa = PBXGroup;
+			children = (
+				1B468E0D252DF99700723FD8 /* RecommendedSection.swift */,
+				1B468E1D252DFCFB00723FD8 /* TitleSection.swift */,
+			);
+			path = CompositionalSections;
+			sourceTree = "<group>";
+		};
+		1B468E17252DF9D600723FD8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B468E18252DF9E000723FD8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +208,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B468DF7252DEB8000723FD8 /* ViewController.swift in Sources */,
+				1B468E15252DF9C300723FD8 /* RecommenedCustomCell.swift in Sources */,
 				1B468DF3252DEB8000723FD8 /* AppDelegate.swift in Sources */,
+				1B468E12252DF9A500723FD8 /* MainTabBarController.swift in Sources */,
+				1B468E1E252DFCFB00723FD8 /* TitleSection.swift in Sources */,
 				1B468DF5252DEB8000723FD8 /* SceneDelegate.swift in Sources */,
+				1B468E0E252DF99700723FD8 /* RecommendedSection.swift in Sources */,
+				1B468E1B252DFC3400723FD8 /* RecommendedCollectionViewController.swift in Sources */,
+				1B468E21252DFD3500723FD8 /* CompositionalSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
