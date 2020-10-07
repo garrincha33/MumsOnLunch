@@ -13,7 +13,6 @@ class MainTabBarController: UITabBarController {
         view.backgroundColor = .systemBlue
         setupUI()
     }
-    
     private func setupUI() {
         viewControllers = [
             setupNavigationController(with: RecommendedCollectionViewController(), title: "Recomended", systemItem: UITabBarItem.SystemItem.featured, tag: 0),
@@ -21,7 +20,6 @@ class MainTabBarController: UITabBarController {
             setupNavigationController(with: UIViewController(), title: "Favorites", systemItem: UITabBarItem.SystemItem.favorites, tag: 2),
         ]
     }
-    
     private func setupNavigationController(with rootViewController: UIViewController, title: String, systemItem: UITabBarItem.SystemItem, tag: Int) -> UINavigationController {
         let navController = UINavigationController(rootViewController: rootViewController)
         navigationController?.tabBarItem.title = title
