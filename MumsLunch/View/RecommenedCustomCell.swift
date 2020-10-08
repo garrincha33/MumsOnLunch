@@ -10,8 +10,8 @@ import UIKit
 class RecommenedCustomCell: UICollectionViewCell {
     let titleLable: UILabel = {
         let lable = UILabel()
-        lable.textColor = .systemYellow
-        lable.font = UIFont.systemFont(ofSize: 16)
+        lable.textColor = .black
+        lable.font = UIFont.systemFont(ofSize: 36)
         lable.translatesAutoresizingMaskIntoConstraints = false
         return lable
     }()

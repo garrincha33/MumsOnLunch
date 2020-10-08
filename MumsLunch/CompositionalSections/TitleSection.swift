@@ -10,12 +10,21 @@ import UIKit
 class TitleSection: Section {
     var numberOfitems = 1
     func layoutSection() -> NSCollectionLayoutSection {
+//        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.75))
+//        let items = NSCollectionLayoutItem(layoutSize: itemSize)
+//        items.contentInsets = NSDirectionalEdgeInsets.init(top: 0, leading: 10, bottom: 0, trailing: 0)
+//        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(73))
+//        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [items])
+//        let section = NSCollectionLayoutSection(group: group)
+//        section.orthogonalScrollingBehavior = .groupPaging
+//        return section
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
-        let items = NSCollectionLayoutItem(layoutSize: itemSize)
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(73))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [items])
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+
         let section = NSCollectionLayoutSection(group: group)
-        section.orthogonalScrollingBehavior = .groupPaging
         return section
     }
     func configureCell(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {

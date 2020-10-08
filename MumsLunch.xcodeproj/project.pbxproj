@@ -21,7 +21,22 @@
 		1BE89EA1252E625B00F36109 /* FirstSectionContentCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EA0252E625B00F36109 /* FirstSectionContentCustomCell.swift */; };
 		1BE89EA8252E6F1C00F36109 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EA7252E6F1C00F36109 /* UICollectionView+Extension.swift */; };
 		1BE89EAC252E6FC700F36109 /* RegisterableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EAB252E6FC700F36109 /* RegisterableView.swift */; };
+		1BE89EB5252EF54900F36109 /* MumsLunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EB4252EF54900F36109 /* MumsLunchTests.swift */; };
+		1BE89EC0252F81F200F36109 /* AnotherSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EBF252F81F200F36109 /* AnotherSection.swift */; };
+		1BE89EC6252F835900F36109 /* TitlesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EC5252F835900F36109 /* TitlesSection.swift */; };
+		1BE89ECA252F854C00F36109 /* TitlesTestingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EC9252F854C00F36109 /* TitlesTestingCell.swift */; };
+		1BE89ECE252FB00400F36109 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89ECD252FB00400F36109 /* TitleViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BE89EB7252EF54900F36109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B468DE7252DEB8000723FD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B468DEE252DEB8000723FD8;
+			remoteInfo = MumsLunch;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1B468DEF252DEB8000723FD8 /* MumsLunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MumsLunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,10 +55,24 @@
 		1BE89EA0252E625B00F36109 /* FirstSectionContentCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSectionContentCustomCell.swift; sourceTree = "<group>"; };
 		1BE89EA7252E6F1C00F36109 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		1BE89EAB252E6FC700F36109 /* RegisterableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterableView.swift; sourceTree = "<group>"; };
+		1BE89EB2252EF54900F36109 /* MumsLunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MumsLunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE89EB4252EF54900F36109 /* MumsLunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MumsLunchTests.swift; sourceTree = "<group>"; };
+		1BE89EB6252EF54900F36109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE89EBF252F81F200F36109 /* AnotherSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherSection.swift; sourceTree = "<group>"; };
+		1BE89EC5252F835900F36109 /* TitlesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesSection.swift; sourceTree = "<group>"; };
+		1BE89EC9252F854C00F36109 /* TitlesTestingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesTestingCell.swift; sourceTree = "<group>"; };
+		1BE89ECD252FB00400F36109 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1B468DEC252DEB8000723FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BE89EAF252EF54900F36109 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				1B468DF1252DEB8000723FD8 /* MumsLunch */,
+				1BE89EB3252EF54900F36109 /* MumsLunchTests */,
 				1B468DF0252DEB8000723FD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				1B468DEF252DEB8000723FD8 /* MumsLunch.app */,
+				1BE89EB2252EF54900F36109 /* MumsLunchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +103,7 @@
 		1B468DF1252DEB8000723FD8 /* MumsLunch */ = {
 			isa = PBXGroup;
 			children = (
+				1BE89EBE252F811D00F36109 /* DummyFiles */,
 				1B468E18252DF9E000723FD8 /* Enums */,
 				1B468E17252DF9D600723FD8 /* Extensions */,
 				1B468E0C252DF96500723FD8 /* CompositionalSections */,
@@ -147,6 +179,26 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		1BE89EB3252EF54900F36109 /* MumsLunchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BE89EB4252EF54900F36109 /* MumsLunchTests.swift */,
+				1BE89EB6252EF54900F36109 /* Info.plist */,
+			);
+			path = MumsLunchTests;
+			sourceTree = "<group>";
+		};
+		1BE89EBE252F811D00F36109 /* DummyFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1BE89EBF252F81F200F36109 /* AnotherSection.swift */,
+				1BE89EC5252F835900F36109 /* TitlesSection.swift */,
+				1BE89EC9252F854C00F36109 /* TitlesTestingCell.swift */,
+				1BE89ECD252FB00400F36109 /* TitleViewModel.swift */,
+			);
+			path = DummyFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +219,24 @@
 			productReference = 1B468DEF252DEB8000723FD8 /* MumsLunch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1BE89EB1252EF54900F36109 /* MumsLunchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BE89EB9252EF54900F36109 /* Build configuration list for PBXNativeTarget "MumsLunchTests" */;
+			buildPhases = (
+				1BE89EAE252EF54900F36109 /* Sources */,
+				1BE89EAF252EF54900F36109 /* Frameworks */,
+				1BE89EB0252EF54900F36109 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BE89EB8252EF54900F36109 /* PBXTargetDependency */,
+			);
+			name = MumsLunchTests;
+			productName = MumsLunchTests;
+			productReference = 1BE89EB2252EF54900F36109 /* MumsLunchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -178,6 +248,10 @@
 				TargetAttributes = {
 					1B468DEE252DEB8000723FD8 = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					1BE89EB1252EF54900F36109 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 1B468DEE252DEB8000723FD8;
 					};
 				};
 			};
@@ -195,6 +269,7 @@
 			projectRoot = "";
 			targets = (
 				1B468DEE252DEB8000723FD8 /* MumsLunch */,
+				1BE89EB1252EF54900F36109 /* MumsLunchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +284,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BE89EB0252EF54900F36109 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,22 +298,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE89EC0252F81F200F36109 /* AnotherSection.swift in Sources */,
 				1B468DF7252DEB8000723FD8 /* ViewController.swift in Sources */,
 				1BE89EAC252E6FC700F36109 /* RegisterableView.swift in Sources */,
 				1BE89EA8252E6F1C00F36109 /* UICollectionView+Extension.swift in Sources */,
 				1B468E15252DF9C300723FD8 /* RecommenedCustomCell.swift in Sources */,
 				1B468DF3252DEB8000723FD8 /* AppDelegate.swift in Sources */,
 				1B468E12252DF9A500723FD8 /* MainTabBarController.swift in Sources */,
+				1BE89ECA252F854C00F36109 /* TitlesTestingCell.swift in Sources */,
 				1B468E1E252DFCFB00723FD8 /* TitleSection.swift in Sources */,
+				1BE89EC6252F835900F36109 /* TitlesSection.swift in Sources */,
 				1B468DF5252DEB8000723FD8 /* SceneDelegate.swift in Sources */,
 				1B468E0E252DF99700723FD8 /* RecommendedSection.swift in Sources */,
 				1BE89EA1252E625B00F36109 /* FirstSectionContentCustomCell.swift in Sources */,
+				1BE89ECE252FB00400F36109 /* TitleViewModel.swift in Sources */,
 				1B468E1B252DFC3400723FD8 /* RecommendedCollectionViewController.swift in Sources */,
 				1B468E21252DFD3500723FD8 /* CompositionalSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BE89EAE252EF54900F36109 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE89EB5252EF54900F36109 /* MumsLunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BE89EB8252EF54900F36109 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B468DEE252DEB8000723FD8 /* MumsLunch */;
+			targetProxy = 1BE89EB7252EF54900F36109 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1B468DFD252DEB8200723FD8 /* LaunchScreen.storyboard */ = {
@@ -399,6 +501,46 @@
 			};
 			name = Release;
 		};
+		1BE89EBA252EF54900F36109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMQAGMF379;
+				INFOPLIST_FILE = MumsLunchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Richard-Price.MumsLunchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MumsLunch.app/MumsLunch";
+			};
+			name = Debug;
+		};
+		1BE89EBB252EF54900F36109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMQAGMF379;
+				INFOPLIST_FILE = MumsLunchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Richard-Price.MumsLunchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MumsLunch.app/MumsLunch";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,6 +558,15 @@
 			buildConfigurations = (
 				1B468E04252DEB8200723FD8 /* Debug */,
 				1B468E05252DEB8200723FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BE89EB9252EF54900F36109 /* Build configuration list for PBXNativeTarget "MumsLunchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE89EBA252EF54900F36109 /* Debug */,
+				1BE89EBB252EF54900F36109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
