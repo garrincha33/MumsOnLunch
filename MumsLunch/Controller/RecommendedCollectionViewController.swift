@@ -10,6 +10,7 @@ import UIKit
 class RecommendedCollectionViewController: UICollectionViewController {
     let sections: [Section] = [
         TitleSection(title: "Recommended", isShowAllHidden: true),
+        RecommendedSection(),
         TitleSection(title: "Popular", isShowAllHidden: true),
         TitleSection(title: "Favourites", isShowAllHidden: true),
     ]
@@ -21,9 +22,13 @@ class RecommendedCollectionViewController: UICollectionViewController {
         super.init(collectionViewLayout: UICollectionViewLayout())
     }
     private func setupCollectionView() {
-        collectionView.backgroundColor = .purple
         collectionView.collectionViewLayout = titleLableSetup()
-        collectionView.register(RecommenedCustomCell.self, forCellWithReuseIdentifier: String(describing: RecommenedCustomCell.self))
+        collectionView.backgroundColor = .white
+        let cells: [RegisterableView] = [
+            .class(RecommenedCustomCell.self),
+            .class(FirstSectionContentCustomCell.self),
+        ]
+        collectionView.register(cells: cells)
     }
     private func titleLableSetup() -> UICollectionViewCompositionalLayout {
         let sections = self.sections
