@@ -26,6 +26,9 @@
 		1BE89EC6252F835900F36109 /* TitlesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EC5252F835900F36109 /* TitlesSection.swift */; };
 		1BE89ECA252F854C00F36109 /* TitlesTestingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EC9252F854C00F36109 /* TitlesTestingCell.swift */; };
 		1BE89ECE252FB00400F36109 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89ECD252FB00400F36109 /* TitleViewModel.swift */; };
+		1BEB38592534F04500BEAC13 /* ProSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB38582534F04500BEAC13 /* ProSection.swift */; };
+		1BEB385D2534F11000BEAC13 /* TheMainSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB385C2534F11000BEAC13 /* TheMainSection.swift */; };
+		1BEB38672535A46500BEAC13 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB38662535A46500BEAC13 /* DataType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		1BE89EC5252F835900F36109 /* TitlesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesSection.swift; sourceTree = "<group>"; };
 		1BE89EC9252F854C00F36109 /* TitlesTestingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesTestingCell.swift; sourceTree = "<group>"; };
 		1BE89ECD252FB00400F36109 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		1BEB38582534F04500BEAC13 /* ProSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSection.swift; sourceTree = "<group>"; };
+		1BEB385C2534F11000BEAC13 /* TheMainSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainSection.swift; sourceTree = "<group>"; };
+		1BEB38662535A46500BEAC13 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,28 +110,19 @@
 			isa = PBXGroup;
 			children = (
 				1BE89EBE252F811D00F36109 /* DummyFiles */,
-				1B468E18252DF9E000723FD8 /* Enums */,
 				1B468E17252DF9D600723FD8 /* Extensions */,
 				1B468E0C252DF96500723FD8 /* CompositionalSections */,
-				1B468E0B252DF95D00723FD8 /* Networking */,
 				1B468E0A252DF95600723FD8 /* Controller */,
 				1B468E09252DF95100723FD8 /* View */,
-				1B468E08252DF94B00723FD8 /* Model */,
 				1B468DF2252DEB8000723FD8 /* AppDelegate.swift */,
 				1B468DF4252DEB8000723FD8 /* SceneDelegate.swift */,
 				1B468DF6252DEB8000723FD8 /* ViewController.swift */,
 				1B468DFB252DEB8200723FD8 /* Assets.xcassets */,
 				1B468DFD252DEB8200723FD8 /* LaunchScreen.storyboard */,
 				1B468E00252DEB8200723FD8 /* Info.plist */,
+				1BEB38662535A46500BEAC13 /* DataType.swift */,
 			);
 			path = MumsLunch;
-			sourceTree = "<group>";
-		};
-		1B468E08252DF94B00723FD8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1B468E09252DF95100723FD8 /* View */ = {
@@ -149,13 +146,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		1B468E0B252DF95D00723FD8 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		1B468E0C252DF96500723FD8 /* CompositionalSections */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,13 +160,6 @@
 			children = (
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		1B468E18252DF9E000723FD8 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 		1BE89EB3252EF54900F36109 /* MumsLunchTests */ = {
@@ -195,6 +178,8 @@
 				1BE89EC5252F835900F36109 /* TitlesSection.swift */,
 				1BE89EC9252F854C00F36109 /* TitlesTestingCell.swift */,
 				1BE89ECD252FB00400F36109 /* TitleViewModel.swift */,
+				1BEB38582534F04500BEAC13 /* ProSection.swift */,
+				1BEB385C2534F11000BEAC13 /* TheMainSection.swift */,
 			);
 			path = DummyFiles;
 			sourceTree = "<group>";
@@ -305,10 +290,13 @@
 				1B468E15252DF9C300723FD8 /* RecommenedCustomCell.swift in Sources */,
 				1B468DF3252DEB8000723FD8 /* AppDelegate.swift in Sources */,
 				1B468E12252DF9A500723FD8 /* MainTabBarController.swift in Sources */,
+				1BEB38672535A46500BEAC13 /* DataType.swift in Sources */,
 				1BE89ECA252F854C00F36109 /* TitlesTestingCell.swift in Sources */,
 				1B468E1E252DFCFB00723FD8 /* TitleSection.swift in Sources */,
 				1BE89EC6252F835900F36109 /* TitlesSection.swift in Sources */,
+				1BEB385D2534F11000BEAC13 /* TheMainSection.swift in Sources */,
 				1B468DF5252DEB8000723FD8 /* SceneDelegate.swift in Sources */,
+				1BEB38592534F04500BEAC13 /* ProSection.swift in Sources */,
 				1B468E0E252DF99700723FD8 /* RecommendedSection.swift in Sources */,
 				1BE89EA1252E625B00F36109 /* FirstSectionContentCustomCell.swift in Sources */,
 				1BE89ECE252FB00400F36109 /* TitleViewModel.swift in Sources */,
