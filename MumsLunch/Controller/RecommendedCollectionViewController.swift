@@ -9,17 +9,16 @@ import UIKit
 
 class RecommendedCollectionViewController: UICollectionViewController {
     let sections: [Section] = [
-        TitleSection(title: "Recommended", isShowAllHidden: true),
+        TitleSection(title: "Baby Friendly", isShowAllHidden: true),
         RecommendedSection(),
         TitleSection(title: "Popular", isShowAllHidden: false),
-        RecommendedSection(),
-        TitleSection(title: "Favourites", isShowAllHidden: true),
         RecommendedSection()
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
         setupNavigationBar()
+        makeCall()
 
     }
     init() {
@@ -47,7 +46,7 @@ class RecommendedCollectionViewController: UICollectionViewController {
         let width = view.frame.width + 15
         let titleView = UIView()
         titleView.frame = .init(x: 0, y: 0, width: width, height: 50)
-        titleView.backgroundColor = .clear
+        titleView.backgroundColor = .red
         navigationItem.titleView = titleView
     }
 
@@ -60,6 +59,30 @@ class RecommendedCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         sections[indexPath.section].configureCell(collectionView: collectionView, indexPath: indexPath)
+    }
+    @Published var datas = [datatype]()
+    
+    private func makeCall() {
+        let url1 = "https://developers.zomato.com/api/v2.1/geocode?lat=51.489847&lon=-3.177570"
+        let apiKey = "8fd6be973bdad266a0e5ae078981e696"
+        let url = URL(string: url1)
+        var req = URLRequest.init(url: url!)
+        req.addValue("application/json", forHTTPHeaderField: "Accept")
+        req.addValue(apiKey, forHTTPHeaderField: "user-key")
+        req.httpMethod = "GET"
+        
+        let sess = URLSession(configuration: .default)
+        sess.dataTask(with: req) {(data,_,_) in
+            do {
+                let fetch = try JSONDecoder().decode(Type.self, from: data!)
+                print(fetch)
+                for i in fetch.nearby_restaurants {
+                    print(i.restaurant)
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }.resume()
     }
 
     required init?(coder: NSCoder) {
