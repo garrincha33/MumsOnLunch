@@ -8,6 +8,7 @@
 import UIKit
 
 struct datatype : Identifiable {
+
     var id : String
     var name : String
     var image : String

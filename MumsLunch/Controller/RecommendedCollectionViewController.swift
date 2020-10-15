@@ -8,10 +8,10 @@
 import UIKit
 
 class RecommendedCollectionViewController: UICollectionViewController {
+    
+    lazy var image = CustomImageView(frame: .zero)
     let sections: [Section] = [
         TitleSection(title: "Baby Friendly", isShowAllHidden: true),
-        RecommendedSection(),
-        TitleSection(title: "Popular", isShowAllHidden: false),
         RecommendedSection()
     ]
     override func viewDidLoad() {
@@ -46,7 +46,7 @@ class RecommendedCollectionViewController: UICollectionViewController {
         let width = view.frame.width + 15
         let titleView = UIView()
         titleView.frame = .init(x: 0, y: 0, width: width, height: 50)
-        titleView.backgroundColor = .red
+        titleView.backgroundColor = .white
         navigationItem.titleView = titleView
     }
 
@@ -60,13 +60,14 @@ class RecommendedCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         sections[indexPath.section].configureCell(collectionView: collectionView, indexPath: indexPath)
     }
+    
     @Published var datas = [datatype]()
     
     private func makeCall() {
         let url1 = "https://developers.zomato.com/api/v2.1/geocode?lat=51.489847&lon=-3.177570"
         let apiKey = "8fd6be973bdad266a0e5ae078981e696"
-        let url = URL(string: url1)
-        var req = URLRequest.init(url: url!)
+        guard let url = URL(string: url1) else {return}
+        var req = URLRequest.init(url: url)
         req.addValue("application/json", forHTTPHeaderField: "Accept")
         req.addValue(apiKey, forHTTPHeaderField: "user-key")
         req.httpMethod = "GET"
