@@ -8,21 +8,17 @@
 import UIKit
 
 class FirstSectionContentCustomCell: UICollectionViewCell {
-    let FirstSectionImage: UIView = {
-        var image: UIImage = UIImage(named: "placeholder_img")!
-        let view = UIView()
-        view.backgroundColor = .red
-        view.contentMode = .scaleAspectFill
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 5
-        view.clipsToBounds = true
-        return view
+    let FirstSectionImage: CustomImageView = {
+        let recommenedImage = CustomImageView(frame: .zero)
+        return recommenedImage
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
          setupUI()
     }
+    
+
     
     private func setupUI() {
         contentView.addSubview(FirstSectionImage)

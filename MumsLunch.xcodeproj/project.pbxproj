@@ -18,6 +18,8 @@
 		1B468E1B252DFC3400723FD8 /* RecommendedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468E1A252DFC3400723FD8 /* RecommendedCollectionViewController.swift */; };
 		1B468E1E252DFCFB00723FD8 /* TitleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468E1D252DFCFB00723FD8 /* TitleSection.swift */; };
 		1B468E21252DFD3500723FD8 /* CompositionalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B468E20252DFD3500723FD8 /* CompositionalSection.swift */; };
+		1B8B36F22538C5E0005876F8 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B36F12538C5E0005876F8 /* CustomImageView.swift */; };
+		1B8B36F62538C899005876F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B36F52538C899005876F8 /* NetworkManager.swift */; };
 		1BE89EA1252E625B00F36109 /* FirstSectionContentCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EA0252E625B00F36109 /* FirstSectionContentCustomCell.swift */; };
 		1BE89EA8252E6F1C00F36109 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EA7252E6F1C00F36109 /* UICollectionView+Extension.swift */; };
 		1BE89EAC252E6FC700F36109 /* RegisterableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE89EAB252E6FC700F36109 /* RegisterableView.swift */; };
@@ -55,6 +57,8 @@
 		1B468E1A252DFC3400723FD8 /* RecommendedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewController.swift; sourceTree = "<group>"; };
 		1B468E1D252DFCFB00723FD8 /* TitleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSection.swift; sourceTree = "<group>"; };
 		1B468E20252DFD3500723FD8 /* CompositionalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalSection.swift; sourceTree = "<group>"; };
+		1B8B36F12538C5E0005876F8 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		1B8B36F52538C899005876F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1BE89EA0252E625B00F36109 /* FirstSectionContentCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSectionContentCustomCell.swift; sourceTree = "<group>"; };
 		1BE89EA7252E6F1C00F36109 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		1BE89EAB252E6FC700F36109 /* RegisterableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterableView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 				1B468DFD252DEB8200723FD8 /* LaunchScreen.storyboard */,
 				1B468E00252DEB8200723FD8 /* Info.plist */,
 				1BEB38662535A46500BEAC13 /* DataType.swift */,
+				1B8B36F52538C899005876F8 /* NetworkManager.swift */,
 			);
 			path = MumsLunch;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 				1B468E14252DF9C300723FD8 /* RecommenedCustomCell.swift */,
 				1B468E20252DFD3500723FD8 /* CompositionalSection.swift */,
 				1BE89EA0252E625B00F36109 /* FirstSectionContentCustomCell.swift */,
+				1B8B36F12538C5E0005876F8 /* CustomImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,12 +292,14 @@
 				1BE89EC0252F81F200F36109 /* AnotherSection.swift in Sources */,
 				1B468DF7252DEB8000723FD8 /* ViewController.swift in Sources */,
 				1BE89EAC252E6FC700F36109 /* RegisterableView.swift in Sources */,
+				1B8B36F62538C899005876F8 /* NetworkManager.swift in Sources */,
 				1BE89EA8252E6F1C00F36109 /* UICollectionView+Extension.swift in Sources */,
 				1B468E15252DF9C300723FD8 /* RecommenedCustomCell.swift in Sources */,
 				1B468DF3252DEB8000723FD8 /* AppDelegate.swift in Sources */,
 				1B468E12252DF9A500723FD8 /* MainTabBarController.swift in Sources */,
 				1BEB38672535A46500BEAC13 /* DataType.swift in Sources */,
 				1BE89ECA252F854C00F36109 /* TitlesTestingCell.swift in Sources */,
+				1B8B36F22538C5E0005876F8 /* CustomImageView.swift in Sources */,
 				1B468E1E252DFCFB00723FD8 /* TitleSection.swift in Sources */,
 				1BE89EC6252F835900F36109 /* TitlesSection.swift in Sources */,
 				1BEB385D2534F11000BEAC13 /* TheMainSection.swift in Sources */,
